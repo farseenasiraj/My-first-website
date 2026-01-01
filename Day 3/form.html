@@ -3,11 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Registration form</title>
+    <link rel="stylesheet" href="form.css">
+        
     </head>
     <body>
-        <h2>Registration Form</h2>
+        <h2 style="text-align: center; font-size: 40px; text-decoration: underline; margin: 10px;">Registration Form</h2>
         <form action="#" method="post" target="_blank">
-            <fieldset><legend>Personal Details</legend>
+            <fieldset class="name" ><legend>Personal Details</legend>
             <label for="name">Name :</label><br>
             <input type="text" id="name" name="name" placeholder="Enter your name" required maxlength="30"><br><br>
             <label for="email">Email :</label><br>
@@ -15,7 +17,7 @@
              <label for="password">Password :</label><br>
             <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
             </fieldset>
-            <fieldset><legend>Additional Details</legend>
+            <fieldset  class="name"><legend>Additional Details</legend>
                 <label>Gender :</label><br>
                 <input type="radio" name="gender" value="Male"required>Male
                 <input type="radio" name="gender" value="Female"ed>Female
@@ -38,35 +40,40 @@
                 <label for="message">Message</label><br>
                 <textarea id="message" name="message" placeholder="Enter your message" rows="4" cols="30" maxlength="100"></textarea><br><br>
                 </fieldset>
+                <div class="click">
                 <input type="submit" value="Submit">
-                <input type="reset" value="Clear Form">
+                <input type="reset" value="Reset">
+                </div>
             </form>
+    
 <hr> 
-<h2>Student Details</h2>
-<table border="1" cellpading="8">
+<h2 style="background-color: azure; color: #000; text-decoration: underline; padding: 10px;text-align: center; margin-bottom:0px;">Student Details</h2>
+<table border="1" cellpading="12" class="table">
     <thead>
         <tr>
-            <th>Name</th>
+            <th >Name</th>
             <th>Age</th>
             <th>Email</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
+        
+        <tr style="font-weight: lighter;">
             <td>Anupriya</td>
             <td>26</td>
             <td>Anu@gmail.com</td>
         </tr>
-        <tr>
+        <tr  style="font-weight: lighter;">
             <td>Zimal</td>
             <td>28</td>
             <td>zimu123@gmail.com</td>
         </tr>
-        <tr>
+        <tr  style="font-weight: lighter;">
             <td>Maya</td>
             <td>25</td>
             <td>mayas@gmail.com</td>
         </tr>
+        
     </tbody>
 </table>
     </body>
