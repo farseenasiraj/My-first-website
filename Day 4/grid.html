@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+
+    <style>
+        .container{
+             display: grid;
+             grid-template-columns: repeat(3,minmax(50px,1fr));
+             grid-template-rows:repeat(2,auto);
+             gap: 20px;   
+        }
+        .card{
+            position: relative;
+            background-color: rgb(220, 203, 203);
+            border: 2px solid;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .card img{
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+
+        }
+        .card h3{
+            margin: 10px 0 5px;
+            color: black;
+        }
+        .card p{
+            font-size: 20px;
+            color: black;
+
+        }
+        .badge{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgb(235, 99, 26);
+            color: azure;
+            padding: 5px;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+     <h1 style="text-align: center; font-size: 50px;text-decoration: underline;color: #f39ca2;margin-top: 10px;">FLOWERS</h1>
+    <div class="container">
+       
+        <div class="card">
+            <span class="badge">NEW</span>
+           <img src="lotus.jpeg" alt="flower" >
+        <h3>LOTUS</h3>
+        <P>A sacred flower that symbolizing purity and peace.</P>
+                </div>
+        <div class="card">
+             <img src="sun.jpeg" alt="flower" >
+             <h3>SUNFLOWER</h3>
+             <P> A cheerful flower that follows the sun.</P>
+        </div>
+        <div class="card">
+            <img src="rose.jpeg"alt="flower">
+            <h3>ROSE</h3>
+            <P>Abeautiful flower that symbolizes love and passion.</P>
+        </div>
+        <div class="card">
+             <img src="daisy.jpeg" alt="flower">
+             <h3>DAISY</h3>
+             <P>A simple flower that represents innocence and joy.</P>
+        </div>
+        <div class="card">
+             <img src="jas.jpeg" alt="flower" >
+             <h3>JASMINE</h3>
+             <P>A delicate flower with a pleasant aroma. </P>
+        </div>
+        <div class="card">
+             <img src="orchid.jpeg" alt="flower">
+             <h3>ORCHID</h3>
+             <P>An exotic flower admired for its beauty. </P>
+        </div>
+    </div>
+</body>
+</html>
