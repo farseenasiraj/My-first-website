@@ -471,7 +471,7 @@ flex-direction: column;
     padding-top: 40px;
     text-align: center;
     color: #060000;
-    font-size: 32px;
+    font-size: 30px;
 }
 .subscribe{
    display: flex;
@@ -485,19 +485,21 @@ flex-direction: column;
     color: #e20707;
      font-size: 30px;
      margin-left: 100px;    
-     
-   
+       
 }
 .subscribe input {
+    position: relative;
     border-radius: 10px;
     border-color: #f01f1f;
     height: 50px;
     width: 500px;
     background-color: transparent;
     padding-left: 15px;
-    
-    
-
+}
+.subscribe i{
+position: absolute;
+right: 250px;
+color: #e80e0e;
 }
 .subscribe input::placeholder{
     color: #e20707;
@@ -526,7 +528,7 @@ flex-direction: column;
     display: grid;
     grid-template-columns: repeat(3,1fr);
    position: absolute;
-   right: 300px;
+   right: 100px;
    gap: 60px;
     
    
